@@ -4,6 +4,6 @@
   gather_facts: no
   tasks:
     - name: Create folder
-      win_file:
-        path: C:\new_folder
+      ansible.windows.win_file:
+        path: C:\Temp\folder1
         state: directory
