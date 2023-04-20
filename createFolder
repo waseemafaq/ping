@@ -1,0 +1,9 @@
+---
+- name: Create folder on Windows C drive
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Create folder
+      win_file:
+        path: C:\new_folder
+        state: directory
